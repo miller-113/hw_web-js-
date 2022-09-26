@@ -27,7 +27,7 @@ document.writeln('<pre>x = y - x++ * z = ',y - x++ * z, '</pre>'); // отним
 //  identifier.style.background = color;
 // }
 var drawCats = function (howManyTimes) {
- for (var i = 0; i < howManyTimes; i++) {
+ for (var i = 8; i < howManyTimes; i++) {
  console.log(i + " =^.^=");
  }
 };
@@ -57,7 +57,6 @@ console.log('');
 var x = 6
 y = 14
 z = 4;
-console.log('x =', x, 'y =', y, 'z =', z);
 console.log('x += y - x++ * z');
 x += y - x++ * z; // прибавляем к x + y - (x * z)
 console.log('x =', x, 'y =', y, 'z =', z);
@@ -66,7 +65,6 @@ console.log('');
 var x = 6
 y = 14
 z = 4;
-console.log('x =', x, 'y =', y, 'z =', z);
 console.log('z = --x - y * 5');
 z = --x - y * 5; // z = x-1 - (y * 5)
 console.log('x =', x, 'y =', y, 'z =', z);
@@ -76,7 +74,7 @@ var x = 6
 y = 14
 z = 4;
 console.log('y /= x + 5 % z');
-y /= x + 5 % z; // y = y / (x + 5 % z)  ||||||||а почему при такой форме получается бесконечность, если x=-5 и z=-75. -0.18666666666666668, в пайтоне это нормально обрабатывает =)
+y /= x + 5 % z;
 console.log('x =', x, 'y =', y, 'z =', z,);
 console.log('');
 
@@ -84,7 +82,7 @@ var x = 6
 y = 14
 z = 4;
 console.log('z - x++ + y * 5');
-z - x++ + y * 5; // тут только x прибавляет 1 на след операцию
+z - x++ + y * 5;
 console.log('x =', x, 'y =', y, 'z =', z);
 console.log('');
 
@@ -92,7 +90,7 @@ var x = 6
 y = 14
 z = 4;
 console.log('x = y - x++ * z');
-x = y - x++ * z; // x = y - (x * z) ||||||||||и теперь у нас 2 бесконечности)
+x = y - x++ * z;
 console.log('x =', x, 'y =', y, 'z =', z);
 console.log('');
 

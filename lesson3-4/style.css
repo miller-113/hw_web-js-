@@ -1,0 +1,10 @@
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrapper > div{
+    display: inline-block;
+
+}
