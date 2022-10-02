@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>func</title>
+</head>
+<body>
+    <script>
+        const add = (a, b) => {return a + b;}
+        const mult = (a, b) => {return a * b;}
+        function operation(a, b, callB){
+            return callB(a, b)
+        }
+        console.log(operation(6,2, mult))
+    </script>
+</body>
+</html>

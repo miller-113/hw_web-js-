@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: #252525;
+    position: absolute;
+}
+
+.section {
+    width: 50%;
+    height: 80vh;
+    background-color: #a29f9f;
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #2f0202;
+    position: relative;
+    bottom: 5px;
+}
+
+.data_field {
+    width: 50%;
+    height: 80vh;
+    background-color: #a28686;
+    display: inline-block;
+}

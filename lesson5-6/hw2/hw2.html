@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--    ДЗ : 5-6
+Створіть сторінку коментарів та стилізуйте її як сторінка відгуків. 
+За допомогою методів перебору виведіть на сторінку коментарі, пошту, номер коментаря та автора
+Дані тут : https://jsonplaceholder.typicode.com/comments
+-->
+<div class="section-comment" id="sec-comment">
+    <!--    <div id="name-c">-->
+    <!--        <span id="id-c">id=</span><span id="name-inner-c">name=</span>-->
+    <!--    </div>-->
+    <!--    <div id="body-c">-->
+    <!--        body text=-->
+    <!--    </div>-->
+    <!--    <div id="email-c">-->
+    <!--        email =-->
+    <!--    </div>-->
+</div>
+<script>
+    var url_ = 'https://jsonplaceholder.typicode.com/comments'
+
+    async function fetchDataAsync(url) {
+        const response = (await fetch(url)).json();
+        console.log(await response.finally());
+        return await response;
+    }
+
+    a = fetchDataAsync(url_);
+    a.then(a => a.map(b => {
+        htmlBody = `
+        <section class="section-comment-inner">
+            <div>
+                <span class="id-c">id=${b.id}</span><span class="name-c">&nbspname=${b.name}</span>
+            </div>
+            <div class="body-c">
+                body text=${b.body}
+            </div>
+            <div class="email-c">
+                email=${b.email}
+            </div>
+        </section>
+`
+        body_ = `<div>${b.body}</div>`;
+        name_ = `<div>${b.name}</div>`;
+        email_ = `<div>${b.email}</div>`;
+        id_ = `<span>${b.id}</span>`;
+        console.log(document.getElementById('sec-comment').innerHTML += htmlBody,)
+        // console.log(document.getElementById('body-c').innerHTML += body_,
+        // document.getElementById('email-c').innerHTML += email_,
+        // document.getElementById('name-inner-c').innerHTML += name_,
+        // document.getElementById('id-c').innerHTML += id_, b.postId)
+        // document.getElementById('id-c').innerHTML += id_, b.postId)
+    }))
+</script>
+</body>
+</html>

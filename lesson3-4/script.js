@@ -22,7 +22,7 @@ document.write('</div>')
 
 document.write('<div>')
 
-for (let row = 0; row <= 5; row++){
+for (let row = 0; row <= 7; row++){
     for (let column = 0; column <= 15; column++){
         if (row !== 0 && row !== 5){
             if (column !== 0 && column !== 15){

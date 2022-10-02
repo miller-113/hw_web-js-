@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    <!--    Створіть функцію, яка заповнюватиме масив 10-ма іксами за допомогою циклу.-->
+
+    // function x(arr) {
+    //     for (let i = 0; i < 10; i++) {
+    //         arr[i] = 'x'
+    //     }
+    //     return arr;
+    // }
+    //
+    // var ar = [1, 2, 3, 4, 5, 6]
+    // console.log(x(ar))
+
+    //Використовуючи CallBack function, створіть калькулятор, який буде від користувача приймати 2 числа і
+    // знак арефметичної операції. При введенні не числа або при розподілі на 0 виводити помилку.
+    function add(a, b) {
+        return a + b
+    }
+
+    function mult(a, b) {
+        return a * b
+    }
+
+    function divide(a, b) {
+        if (a === 0 || b === 0) {
+            return console.error('Dividing by zero')
+        }
+        return a / b
+    }
+
+    function operation(a, b, callb) {
+        if (a.Number.isInteger() || b.Number.isInteger()) {
+            return callb(a, b)
+        } else {
+            return 'Incorrect data'
+        }
+    }
+
+    console.log(operation(2, 2, divide))
+</script>
+</body>
+</html>

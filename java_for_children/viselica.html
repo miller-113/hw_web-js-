@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viselica</title>
+</head>
+<body>
+    <script>
+        // var name = prompt("Как вас зовут?");
+        // console.log("Привет, " + name);
+        // var likesCats = confirm("Тебе нравятся кошки?");
+        // if (likesCats) {
+        //  console.log("Ты классная кошка!");
+        // } else {
+        //  console.log("Что ж, не проблема. Все равно ты молодец!");
+        // }
+         var words = [
+         "программа",
+         "макака",
+         "прекрасный",
+         "оладушек"
+        ];
+
+         var word = words[Math.floor(Math.random() * words.length)];
+         var answerArray = [];
+
+         for (var i = 0; i < word.length; i++) {
+            answerArray[i] = "_";
+        }
+         var remainingLetters = word.length;
+         var guessLetter = '';
+         while (remainingLetters > 0) {
+
+
+             // Показываем состояние игры
+             alert(answerArray.join(" "));
+             // Запрашиваем вариант ответа
+             var guess = prompt("Угадайте букву, или нажмите Отмена для\
+            выхода из игры.");
+             if (guess === null) {
+                 // Выходим из игрового цикла
+                 break;
+             } else if(guessLetter === guess){
+             alert('вы уже вводили эту букву');
+             continue;
+             } else if (guess.length !== 1) {
+             alert("Пожалуйста, введите одиночную букву.");
+             } else {
+                 // Обновляем состояние игры
+                 for (var j = 0; j < word.length; j++) {
+                     if (word[j] === guess) {
+                     answerArray[j] = guess;
+                     remainingLetters--;
+                     guessLetter = answerArray[j];
+                     }
+                 }
+             }
+         // Конец игрового цикла
+         }
+         // Отображаем ответ и поздравляем игрока
+         alert(answerArray.join(" "));
+         alert("Отлично! Было загадано слово " + word);
+    </script>
+</body>
+</html>
