@@ -15,11 +15,13 @@ body {
 
 .section-comment-inner {
     width: 80%;
-    margin: 10px auto;
+    margin: 0px auto;
     /*border: 2px solid #1A01CC;*/
-    border-left: 1px solid #404040;
+    /*border-left: 4px solid black;*/
     overflow: auto;
-    background-color: #2f2f2f;
+    background-color: #2c2b2b;
+    /*border-bottom: 2px solid black;*/
+    border: 1.9px solid rgba(72, 69, 72, 0.6)
 }
 
 .name-c, .email-c {
@@ -32,7 +34,7 @@ body {
     line-height: 3;
 }
 
-.email-c, .id-c, .body-c {
+.email-c, .body-c, .name-outer {
     margin-left: 5%;
 }
 
