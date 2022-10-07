@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Calculator() {
+
+        this.read = () => {
+            num1 = parseInt(prompt('Первое число'));
+            num2 = parseInt(prompt('Второе число'));
+        }
+        // = parseInt(prompt('Первое число'));
+        // b = parseInt(prompt('Второе число'));
+
+        this.sum = (n1, n2) => n1 + n2
+        this.mul = (n1, n2) => n1 * n2
+    }
+
+    var d = new Calculator()
+    d.read()
+    document.write(d.sum(this.num1, this.num2))
+    document.write('<br>', d.mul(this.num1, this.num2))
+    document.write('<br>Hw1(addit.)')
+
+    function Human(age) {
+        this.age = age
+    }
+
+    h1 = new Human(16)
+    h2 = new Human(10)
+    h3 = new Human(32)
+    h4 = new Human(20)
+    var lst_obj = []
+    lst_obj.push(h1, h2, h3, h4)
+    document.write(`<br>${lst_obj.map(elem => elem.age).sort()}`)
+</script>
+</body>
+</html>

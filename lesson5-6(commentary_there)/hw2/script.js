@@ -17,7 +17,7 @@ a.then(a => a.map(b => {
                 ${b.body}
             </div>
             <div class="email-c">
-                <a href="mailto:${b.email}" ${b.email}
+                <a href="mailto:${b.email}"> ${b.email}</a>
             </div>
         </section>
         `
