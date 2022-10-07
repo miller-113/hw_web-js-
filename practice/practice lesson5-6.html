@@ -36,7 +36,7 @@
     }
 
     function operation(a, b, callb) {
-        if (a.Number.isInteger() || b.Number.isInteger()) {
+        if (Number.isInteger(a) || Number.isInteger(b)) {
             return callb(a, b)
         } else {
             return 'Incorrect data'
@@ -44,6 +44,9 @@
     }
 
     console.log(operation(2, 2, divide))
+
+
+
 </script>
 </body>
 </html>
