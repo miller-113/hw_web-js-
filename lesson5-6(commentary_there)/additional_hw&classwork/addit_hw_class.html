@@ -20,13 +20,29 @@
     }
 
     var d = new Calculator()
-    d.read()
+    // d.read()
     document.write(d.sum(this.num1, this.num2))
     document.write('<br>', d.mul(this.num1, this.num2))
     document.write('<br>Hw1(addit.)')
 
-    function Human(age) {
+    function Human(age, name = 'Jack', gender = '', weight = '', height = '') {
+        this.name = name
+        this.gender = gender
         this.age = age
+        this.weight = weight
+        this.height = height
+
+        this.calculateWeight = function () {
+            if (this.gender === 'male') {
+                algCalc = parseInt((parseInt(this.height) - 100) * 1.15)
+                summary = this.weight < algCalc - 10 ? 'You are underweight' : this.weight > algCalc + 10 ? 'You are overweight' : 'You are in good conditional'
+                return `Your normal weight is ${algCalc - 10}-${algCalc + 10}. ${summary}`
+            } else {
+                algCalc = parseInt((parseInt(this.height) - 110) * 1.15)
+                summary = this.weight < algCalc - 10 ? 'You are underweight' : this.weight > algCalc + 10 ? 'You are overweight' : 'You are in good conditional'
+                return `Your normal weight is ${algCalc - 10}-${algCalc + 10}. ${summary}`
+            }
+        }
     }
 
     h1 = new Human(16)
@@ -35,7 +51,13 @@
     h4 = new Human(20)
     var lst_obj = []
     lst_obj.push(h1, h2, h3, h4)
-    document.write(`<br>${lst_obj.map(elem => elem.age).sort()}`)
+    document.write(`<br>${lst_obj.map(elem => elem.age).sort()}`);
+    h5 = new Human(24, 'Jack', 'male', '110', '185')
+
+    document.write('<br>')
+    document.write(h5.calculateWeight())
+
+
 </script>
 </body>
 </html>
