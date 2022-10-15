@@ -51,11 +51,13 @@ test_arr = ['hello', 'world', 23, '23', null]
 type_ = 'string'
 
 function filterBy(arr, type) {
-    return arr.forEach(e => {
+    temp_arr = []
+    arr.forEach(e => {
         if (typeof (e) !== type) {
-            console.log(e)
+            temp_arr.push(e)
         }
     })
+    return temp_arr
 }
 
-filterBy(test_arr, type_)
+console.log(filterBy(test_arr, type_))
