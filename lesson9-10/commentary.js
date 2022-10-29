@@ -1,27 +1,8 @@
-var url_ = 'https://jsonplaceholder.typicode.com/comments'
+const url_ = 'https://jsonplaceholder.typicode.com/comments';
 
 const wrapper = document.createElement('div')
-wrapper.className = "section-comment"
-wrapper.id = "sec-comment"
+wrapper.className = "section-comment";wrapper.id = "sec-comment";
 document.body.append(wrapper)
-
-// const modalWindow = document.createElement('div')
-// modalWindow.className = 'myModal'
-// // var modal_for_create = document.querySelector('.myModal')
-// document.body.append(modalWindow)
-//
-// var modalContent = document.createElement('div')
-// modalContent.className = 'modal-content'
-// document.querySelector('.myModal').append(modalContent)
-//
-// var modalHeader = document.createElement('div')
-// modalHeader.className = 'modal-header'
-//
-// var modalBody = document.createElement('div')
-// modalBody.className = 'modal-body'
-//
-// document.querySelector('.modal-content').append(modalHeader, modalBody)
-
 
 async function fetchDataAsync(url) {
     const response = (await fetch(url)).json();
