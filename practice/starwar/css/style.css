@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+nav > ul {
+    min-width: 200px;
+    max-width: 30%;
+    background-color: blue;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li a {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    display: block;
+    height: 100%;
+}
+
+nav li:hover a{
+    background-color: yellow;
+    color: black;
+}
+
+/*startwar satrt*/
+.star_container{
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.star_container .black {
+    color: black;
+} 
+/*startwar end*/

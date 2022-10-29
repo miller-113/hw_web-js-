@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saper</title>
+<!--  <script src="saper.js"></script>-->
+  <link rel="stylesheet" href="style/saper.css">
+</head>
+<!--<body>-->
+
+
+
+<!--  <script>-->
+<!--    // function showNotification({top = 0, right = 0, className, html}) {-->
+<!--    //-->
+<!--    //   let notification = document.createElement('div');-->
+<!--    //   notification.className = "notification";-->
+<!--    //   if (className) {-->
+<!--    //     notification.classList.add(className);-->
+<!--    //   }-->
+<!--    //-->
+<!--    //   notification.style.top = top + 'px';-->
+<!--    //   notification.style.right = right + 'px';-->
+<!--    //-->
+<!--    //   notification.innerHTML = html;-->
+<!--    //   document.body.append(notification);-->
+<!--    //-->
+<!--    //   setTimeout(() => notification.remove(), 1500);-->
+<!--    // }-->
+<!--    //-->
+<!--    // // test it-->
+<!--    // let i = 1;-->
+<!--    // setInterval(() => {-->
+<!--    //   showNotification({-->
+<!--    //     top: 50,-->
+<!--    //     right: 10,-->
+<!--    //     html: 'Hello ' + i++,-->
+<!--    //     className: "welcome"-->
+<!--    //   });-->
+<!--    // }, 50);-->
+
+
+
+<!--    // innDiv = document.createElement('div')-->
+<!--    // innDiv.style.height = '350px';-->
+<!--    // innDiv.style.width = '350px';-->
+<!--    // innDiv.style.margin = 'auto auto';-->
+<!--    // innDiv.style.backgroundColor = 'yellow';-->
+<!--    // let a = document.querySelector('#sec')-->
+<!--    // console.log(a)-->
+<!--    // a.append(innDiv)-->
+<!--    class BackgroundWriter{-->
+<!--      constructor(elem=8) {-->
+<!--        this.elem = elem-->
+<!--      }-->
+
+<!--      writeElems(){-->
+<!--        if (document.querySelector('#game-back') === null){-->
+<!--          this.backGround()-->
+<!--        }-->
+<!--        let i = 1;-->
+<!--        for (let x = 0; x < this.elem * this.elem; x++) {-->
+<!--          let e = document.createElement('div')-->
+<!--          e.className = 'grid-item';-->
+<!--          // if (i === 10){-->
+<!--          //     e.className = 'bomb_cell';-->
+<!--          // }-->
+<!--          e.innerHTML = i; i++;-->
+<!--          // e.style.height = '60px';-->
+<!--          // e.style.width = '60px';-->
+<!--          // e.style.border = '2px solid rgba(0, 0, 0, 0.8)';-->
+<!--          // e.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'-->
+<!--          // e.style.display = 'inline-block'-->
+<!--          document.querySelector('#game-back').append(e)-->
+<!--        }-->
+<!--      }-->
+<!--      hideBombs() {-->
+<!--          let randoms_num = () => {-->
+<!--              var arr = []                         //записываем в этот массив рандомные числа-->
+<!--              let max = 9;                              // максимальная длина массива-->
+<!--              while (arr.length <= max) {-->
+<!--                  var rundomnnumber = Math.floor(Math.random() * this.elem * this.elem + 1); //создадим случайное число-->
+<!--                  if (arr.indexOf(rundomnnumber) === -1) {         // проверим есть оно  у нас или нет-->
+<!--                      arr.push(rundomnnumber);         // записываем в массив т.к нету-->
+<!--                  }-->
+<!--              }-->
+<!--              return arr-->
+<!--          }-->
+<!--          let randNum = randoms_num()-->
+<!--          // console.log(randNum)-->
+<!--          // console.log(this.elem * this.elem + 1)-->
+<!--          let qq = document.querySelectorAll('.grid-item')-->
+<!--          randNum.forEach(e => {-->
+<!--              qq[e-1].classList.add('bomb_cell');-->
+<!--          })-->
+
+<!--      }-->
+
+<!--      backGround() {-->
+<!--        let div = document.createElement('div')-->
+<!--        div.style.width = '800px';-->
+<!--        div.style.height = '600px';-->
+<!--        div.style.margin = '10vh auto';-->
+<!--        div.style.backgroundColor = '#c3bcb2';-->
+<!--        div.id = 'game-back';-->
+<!--        div.style.display = 'grid';-->
+<!--        div.style.gap = '2px';-->
+<!--        div.style.alignContent = 'center';-->
+<!--        div.style.alignItems = 'center';-->
+<!--        div.style.justifyItems = 'center';-->
+<!--        div.style.justifyContent = 'center';-->
+<!--        div.style.gridTemplateColumns =  'auto '.repeat(this.elem);-->
+<!--        document.body.append(div);-->
+<!--      }-->
+<!--    }-->
+
+<!--    var w = new BackgroundWriter(8)-->
+<!--    // w.backGround()-->
+<!--    console.log(document.querySelector('#game-back') === null)-->
+<!--    w.writeElems()-->
+<!--    w.hideBombs()-->
+
+<!--    // document.body.div.append(innDiv)-->
+<!--    // setInterval(() => div.remove(), 1500);-->
+
+<!--  </script>-->
+
+<body>
+
+    <canvas id="canvas"></canvas>
+    <script src="./saper.js"></script>
+
+</body>
+<!--</body>-->
+</html>

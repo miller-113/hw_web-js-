@@ -31,3 +31,4 @@ function* gen(num) {
 for (let i of gen(5)) {
     console.log(i)
 }
+

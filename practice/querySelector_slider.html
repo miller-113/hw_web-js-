@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            /*height: 400px;*/
+            width: 100%;
+        }
+        .photos img{
+            /*display: none;*/
+            opacity: 0;
+            transition: opacity 1s;
+            position: absolute;
+            height: 450px;
+            /*width: 600px;*/
+            max-width: 600px;
+
+        }
+        .wrap{
+            height: 500px;
+            margin: 0 auto;
+        }
+        /*.photos img:first-child{*/
+        /*    display: block;*/
+        /*}*/
+        #showed{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="items">
+        <div>
+            <input class="item" type="text">
+        </div>
+        <div>
+            <input class="item" type="text">
+        </div>
+        <div>
+            <input class="item" type="text">
+        </div>
+<!--        <div class="item"></div>-->
+<!--        <div class="item"></div>-->
+<!--        <div class="item"></div>-->
+    </div>
+    <div class="test">
+        testtext
+    </div>
+    <div class="wrap">
+        <div class="photos">
+            <img src="img/png-transparent-bright-yellow-gold-heap-bullion-jinduicheng-gold.png"
+                 alt="" id="showed">
+            <img src="img/af9c63f0-cea9-437b-87f1-19052b69d8ae.jpg" alt="">
+            <img src="img/bitcoin-btc-bitkoin-logo-fon-belyi-fon-logo.jpg"
+                 alt="" class="photo">
+            <img src="img/red-flasher-siren-realistic-object-light-effect-beacon-for-police-cars-ambulance-fire-trucks-emergency-flashing-siren-transparent-background-illustration-vector.jpg"
+                 alt="" class="photo">
+        </div>
+    </div>
+    <div class="buttons">
+        <input type="button" value="Prev" class="prev">
+        <input type="button" value="Next" class="next">
+    </div>
+  <script>
+<!--      Нажатие на элемент див-->
+      var queryToTest = document.querySelector('.test')
+      queryToTest.onclick =  function (){
+          queryToTest.innerHTML += '123'
+          queryToTest.id = 777
+          queryToTest.style.fontSize = '30px'
+          queryToTest.style.border = '1px solid black'
+          queryToTest.style.backgroundColor = 'yellow'
+      }
+          //
+          //Пример выбора элементов через цикл
+          //.addEventListener('click').innerHTML += '123'
+      // var items = document.querySelectorAll('.item')
+      // console.log(items)
+      // for (var i = 0; i < items.length; i++){
+      //     items[i].addEventListener('focus', function (){
+      //         this.style.border = '4px solid red'
+      //     })
+      // }
+      // for (var i = 0; i < items.length; i++){
+      //     items[i].addEventListener('blur', function (){
+      //         this.style.border = '2px solid #ccc'
+      //     })
+      // }
+          //Пример выбора элементов через цикл с классом
+
+      class A{
+        constructor(selector){
+            this.elems = document.querySelectorAll(selector);
+            }
+         on(event, callback){
+             for (var i = 0; i < this.elems.length; i++){
+                       this.elems[i].addEventListener(event, callback
+                       )}
+             return this
+                  }
+          }
+
+      var elems = new A('.item')
+      elems.on('focus', function (){
+          this.style.border = '4px solid red'
+      }).on('blur', function (){
+          this.style.border = '2px solid #ccc'
+
+      })
+  //
+    var images = document.querySelectorAll('.photos img')
+    var btn_prev = document.querySelector('.prev')
+    var btn_next = document.querySelector('.next')
+    var i = 0
+    btn_next.onclick = function (){
+        images[i].id = '';
+        i++;
+        if (i >= images.length){
+            i = 0;
+        }
+        images[i].id = 'showed';
+
+    }
+    console.log(images)
+    btn_prev.onclick = function (){
+
+        images[i].id = '';
+        i--;
+        if (i < 0){
+            i = images.length-1;
+        }
+
+        images[i].id = 'showed';
+
+    }
+    console.log(images)
+  </script>
+</body>
+</html>
