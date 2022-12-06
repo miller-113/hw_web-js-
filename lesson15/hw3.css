@@ -1,0 +1,25 @@
+form{
+ width: 400px;
+ margin: 10vh auto;
+}
+.logo-img{
+   bottom: 0px;
+   position: absolute;
+   left: -55px;
+}
+.relative{
+   position: relative;
+}
+.suc::before{
+   content: '✅';
+   /*position: absolute;*/
+   right: -30px;
+   top: 38px;
+}
+.err::before{
+   content: '❌';
+   /*position: relative;*/
+   left: 400px;
+   top: 37px;
+}
+

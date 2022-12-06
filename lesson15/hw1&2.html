@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="inputs">
+    <p><input type="text" value="1" data-lenght="10"></p>
+  <p><input type="text" value="2" data-lenght="10"></p>
+  <p><input type="text" value="3" data-lenght="10"></p>
+  <p><input type="text" value="4" data-lenght="5"></p>
+  <p><input type="text" value="5" data-lenght="5"></p>
+</div>
+<p id="test">
+    My paragraph with id 'test'
+</p>
+<script>
+    const inputs = document.querySelector('.inputs')
+    inputs.addEventListener('focusout', function (e){
+        if (!e.target.closest('input')){return}
+        // first exercise
+        test.innerHTML += e.target.value;
+        // second exercise
+        if (e.target.value.length > e.target.dataset.lenght){
+            e.target.style.background = 'red'
+        }else {
+            e.target.style.background = ''
+        }
+    })
+</script>
+</body>
+</html>
