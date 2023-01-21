@@ -1,5 +1,6 @@
+// debugger
 function userInfo(url) {
-
+    document.querySelector(".loader").classList.add("active")
     return new Promise((resolve, reject) => {
 
         let xhr = new XMLHttpRequest();
@@ -25,15 +26,10 @@ function userInfo(url) {
 
 
 let url = 'https://swapi.dev/api/planets/';
-let options =
-    {
-        method: 'GET',
-    }
+
 const containerData = document.querySelector('.wrapperData')
-let req = userInfo(url);
 
 function showPlanets(data){
-    document.querySelector(".loader").classList.add("active")
 
     let outputPlanets = []
     for (let i = 0; i < data.results.length; i++) {
@@ -50,7 +46,6 @@ function showPlanets(data){
     planets.forEach(e => {
         e.onclick = showResidents
     })
-    document.querySelector(".loader").classList.remove("active")
 
 }
 
@@ -58,25 +53,24 @@ function showResidents() {
 
     let residents = this.dataset.residents.split(',')
     if (!this.children.length) {
-        document.querySelector(".loader").classList.add("active")
 
         for (const el of residents) {
             userInfo(el).then(data => {
                 this.insertAdjacentHTML('beforeend', `<li>${data.name}</li>`)
+
             });
         }
-
-        document.querySelector(".loader").classList.remove("active")
 
     }else{
         [...this.children].forEach(e => e.remove())
     }
+    document.querySelector(".loader").classList.remove("active")
+
 }
 
 
 function showNbu(data){
-    console.log(data);
-    let outputDataExc = []
+
     output = `<table>
   <tr>
     <th>Валюта</th>
@@ -100,17 +94,24 @@ function showNbu(data){
 }
 
 
-req.then(data => starWars.addEventListener('click', function (){
+userInfo(url).then(data => starWars.addEventListener('click', function (){
         showPlanets(data)
+    // document.querySelector(".loader").classList.remove("active")
+
     }))
-    .catch(err => {console.error(err);  });
+    .catch(err => {console.error(err);  })
+    .finally(() => {
+        document.querySelector(".loader").classList.remove("active")
+    });
 
 nbu.addEventListener('click', function (){
-    document.querySelector(".loader").classList.add("active")
     userInfo('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
         .then(data => {
             showNbu(data)
         })
+        .finally(() => {
+            document.querySelector(".loader").classList.remove("active")
+        });
     document.querySelector(".loader").classList.remove("active")
 
 })
