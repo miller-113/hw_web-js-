@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    font-size: 2rem;
+}
+.header > li{
+    flex-grow: 1;
+    text-align: center;
+    background: #1ba827;
+    border: 1px solid black;
+    transition: all .4s;
+    cursor: pointer;
+}
+.header > li:hover{
+    background: yellow;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.planets{
+    cursor: pointer;
+}
+
+table, th,td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
