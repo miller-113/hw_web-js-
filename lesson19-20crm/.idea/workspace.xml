@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34225902-b23c-452a-ba9c-1fb3e1e762e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/lesson19-20crm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7ecrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson15/hw4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson15/hw4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7ecrm/code/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/7ecrm/code/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7ecrm/code/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/7ecrm/code/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7ecrm/code/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/7ecrm/code/main-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7ecrm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/7ecrm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7ecrm/restoran/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/7ecrm/restoran/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7ecrm/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/7ecrm/store/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7ecrm/video/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/7ecrm/video/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson9-10/commentary.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson9-10/commentary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson9-10/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson9-10/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice/practice lesson5-6.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/7ecrm" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2L3edaNECWJXHYv1Ja6XLk8kTLT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/mille/PycharmProjects/HW_courses_Phillipe/HW_JS/lesson19-20crm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34225902-b23c-452a-ba9c-1fb3e1e762e5" name="Changes" comment="" />
+      <created>1675104282064</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675104282064</updated>
+      <workItem from="1675104283609" duration="17379000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/7ecrm/code/main-page.js</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
